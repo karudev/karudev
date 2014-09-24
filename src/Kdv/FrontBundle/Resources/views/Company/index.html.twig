@@ -1,0 +1,79 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+   <section id="main" role="main">
+
+        <div class="breadcrumb-container">
+            <div class="row">
+                <div class="large-12 column">
+                    <nav class="breadcrumbs animated bounceInDown">
+                        <a href="{{path('home')}}">Home</a>
+                        <a class="current" href="#">La société</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <section class="part">
+            <div class="row title">
+                <div class="large-12 column">
+                    <h6>A propos de nous</h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-12 column">
+                   <p>
+                        <b>Karudev Informatique</b> propose de prendre en charge vos projets web spécifiques, de faibles ou grandes complexités.<br/>
+
+                        Nous intervenons sur des prestations d'assistance technique dans le domaine du développement web auprès des agences web et entreprises sur <b>Paris</b> - Seine et marne - Haute Seine - Val de Marne
+                        - Seine-Saint-Denis - <b>Guadeloupe</b> - Martinique.
+                    </p>
+                    {#<img src="images/photos/about.jpg" alt="">#}
+                </div>
+            </div>
+        </section>
+
+        <section class="part">
+            <div class="row title">
+                <div class="large-12 column">
+                    <h6>Notre équipe</h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-4 column">
+                    <h6 class="text-center">Dolyveen Renault <small>- Consultant Développeur<br/>6 XP, Expertise : PHP5/Symfony2</small></h6>
+                   
+                    <div class="popup text-center">
+                        <a href="{{asset('global/images/photos/person1.jpg')}}">
+                            <img src="{{asset('global/images/photos/person1.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="about-social">
+                        <a href="http://www.twitter.com/karudev" target="_blank" class="icon-twitter"></a>
+                        <a href="http://www.viadeo.com/profile/0021hc5qt4z2s0bt/" target="_blank" class="icon-linkedin"></a>
+                        <a href="http://www.github.com/karudev" target="_blank" class="icon-github"></a>
+                    </div>
+                </div>
+
+                <div class="large-4 column">
+                    <h6 class="text-center">Harold Gene <small>- Webdesigner Collaborateur <br/>+ 10 XP, Créatif et moderne</small></h6>
+                    <div class="popup text-center">
+                        <a href="{{asset('global/images/photos/person2.jpg')}}">
+                            <img src="{{asset('global/images/photos/person2.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="about-social">
+                        <a href="http://www.viadeo.com/profile/0021jxa4ktbxzxhu" target="_blank" class="icon-linkedin"></a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+          
+        </section>
+
+    </section>
+{% endblock %}
+ 

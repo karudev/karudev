@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <title>{% block title %}Karudev Informatique : Partenaire de votre développement web{% endblock %}</title>
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}" />
+
+
+        <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <![endif]-->
+
+        <meta content="1 days" name="revisit-after">
+        <meta content="
+              Karudev Informatique propose de prendre en charge vos projets web spécifiques, de faibles ou grandes complexités.
+              Nous intervenons sur des prestations d'assistance technique dans le domaine du développement web auprès des agences web et entreprises sur Paris - Seine et marne - Haute Seine - Val de Marne - Seine-Saint-Denis - Guadeloupe - Martinique." name="description">
+        <meta content="E-commerce, Site dynamique, Site TPE - PME, Consultant Développeur Web,Freelance Php, Développeur web, Php, Symfony2, Zend Framework, Développement Web, Création de site web en guadeloupe, webmaster île de france , developpeur web île de france , freelance , webmaster indépendant , création site internet guadeloupe, web Guadeloupe, référencement guadeloupe, creation site internet guadeloupe, site web guadeloupe, création site internet guadeloupe, internet antilles, internet caraibes, informatique guadeloupe, site internet martinique, referencement martinique, referencement antilles., Guadeloupe, site internet guadeloupe, site web guadeloupe, creation site internet guadeloupe, guadeloupe site internet, internet antilles, referencement guadeloupe, referencement site guadeloupe, referencement site internet guadeloupe, site web guadeloupe , prestashop" name="keywords">
+        <meta content="Karudev : Consultant en Développement Web, Développeur d'appliquations web Symfony2 / Zend Framework Paris et Dom-Tom" name="Generator">
+        <meta content="Renault Dolyveen" name="author">
+        <meta content="index, follow" name="robots">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="{{asset('global/css/filoxenia.css')}}">
+        <link rel="stylesheet" href="{{asset('global/css/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{asset('global/css/custom.css')}}">
+         {% block stylesheets %}{% endblock %}
+        <script src="{{asset('global/js/vendor/custom.modernizr.js')}}"></script>
+    </head>
+
+    <body>
+
+ {% block header %}
+        <header class="contain-to-grid">
+            <div class="row">
+                <div class="large-12 column">
+                    <nav id="menu" class="top-bar">
+
+                        <ul class="title-area">
+                            <li class="name">
+                                <a href="{{path('home')}}">
+                                    <img src="{{asset('global/images/logo.png')}}" alt="logo">
+                                </a>
+                            </li>
+                            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+                            </li>
+                        </ul>
+
+                        <section class="top-bar-section">
+                            <ul class="right">
+                                <li><a href="{{path('home')}}">HOME</a></li>
+                                <li><a href="{{path('company')}}">LA SOCIETE</a>
+                                </li>
+                              
+                                <li><a href="{{path('tech')}}">TECHNOLOGIES UTILISEES</a>
+                                </li>
+                                <li><a href="{{path('contact')}}">CONTACT</a>
+                                </li>
+                                <li><a href="{{path('legal')}}">MENTIONS LEGALES</a>
+                                </li>
+
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
+            </div>
+        </header>
+{% endblock %}
+    {% block body %}
+
+    {% endblock %}
+
+        {% block footer %}
+        <a id="back-top" href="#"><i class="icon-caret-up"></i></a>
+        <footer>
+            <div class="row spacy">
+                <div class="large-4 column">
+                    <h4>A propros de nous</h4>
+                    <p>
+                        <b>Karudev Informatique</b> propose de prendre en charge vos projets web spécifiques, de faibles ou grandes complexités.<br/>
+
+                        Nous intervenons sur des prestations d'assistance technique dans le domaine du développement web auprès des agences web et entreprises sur <b>Paris</b> - Seine et marne - Haute Seine - Val de Marne
+                        - Seine-Saint-Denis - <b>Guadeloupe</b> - Martinique.
+                    </p>
+
+                    <!--  <ul class="large-block-grid-5 popup">
+                          <li>
+                              <a href="images/photos/person1.jpg">
+                                  <img src="images/photos/person1_s.jpg" alt="">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="images/photos/person2.jpg">
+                                  <img src="images/photos/person2_s.jpg" alt="">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="images/photos/person3.jpg">
+                                  <img src="images/photos/person3_s.jpg" alt="">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="images/photos/person4.jpg">
+                                  <img src="images/photos/person4_s.jpg" alt="">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="images/photos/person5.jpg">
+                                  <img src="images/photos/person5_s.jpg" alt="">
+                              </a>
+                          </li>
+                      </ul>-->
+                </div>
+
+                <div class="large-3 column">
+                    <h4>Prestations</h4>
+                    <ul class="side-nav">
+                        <li><p>Développements Web</p>
+                        </li>
+                        <li><p>Audits</p>
+                        </li>
+                        <li><p>Conseils</p>
+                        </li>
+                        <li><p>Maintenances</p>
+                        </li>
+                        <li><p>Installations</p>
+                        </li>
+                        <li><p>Formations</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="large-5 column">
+                    <h4>Contact</h4>
+
+                    <div class="row">
+                        <div class="small-3 column">
+                            <h6>Adresse:</h6>
+                        </div>
+                        <div class="small-9 column">
+                            <p>77680 Roissy en brie, France</p>
+                            <p>97122 Baie-Mahault, Guadeloupe</p>
+                        </div>
+                    </div>
+
+                    <!--<div class="row">
+                        <div class="small-3 column text">
+                            <h6>Phone:</h6>
+                        </div>
+                        <div class="small-9 column text">
+                            <p>+61 3 8376 6284
+                                <br>+61 3 8376 6287</p>
+                        </div>
+                    </div>
+                    -->
+                    <div class="row">
+                        <div class="small-3 column text">
+                            <h6>Email:</h6>
+                        </div>
+                        <div class="small-9 column text">
+                            <p>
+                                <a href="mailto:renault@karudev.fr">renault@karudev.fr</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-12 column">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <p class="small-12 large-5 large-uncentered column copyright">
+                    Copyright &copy; 2008 - 2014 | <a href="{{path('legal')}}">Karudev Informatique</a>
+                </p>
+
+                <p class="small-12 large-7 column social">
+                    <a href="mailto:renault@karudev.fr"><i class="icon-envelope"></i></a>
+                    <a href="http://www.twitter.com/karudev" target="_blank"><i class="icon-twitter"></i></a>
+                    <a href="http://www.viadeo.com/profile/0021hc5qt4z2s0bt/" target="_blank"><i class="icon-linkedin"></i></a>
+                    <a href="http://www.github.com/karudev" target="_blank"><i class="icon-github"></i></a>
+                    <a href="skype:drenault971?call" target="_blank"><i class="icon-skype"></i></a>
+
+                </p>
+            </div>
+
+        </footer>
+{% endblock %}
+    {% block javascripts %}
+        <!-- Javascript -->
+        <script src="{{asset('global/js/vendor/jquery.js')}}"></script>
+        <script src="{{asset('global/js/vendor/jquery.magnific-popup.js')}}"></script>
+        <script src="{{asset('global/js/foundation/foundation.js')}}"></script>
+        <script src="{{asset('global/js/foundation/foundation.topbar.js')}}"></script>
+        <script src="{{asset('global/js/foundation/foundation.section.js')}}"></script>
+        <script src="{{asset('global/js/filoxenia.js')}}"></script>
+        <script src="{{asset('global/js/custom.js')}}"></script>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-29879648-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    {% endblock %}
+
+
+
+
+
+    </body>
+
+</html>

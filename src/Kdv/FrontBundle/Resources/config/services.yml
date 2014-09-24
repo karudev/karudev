@@ -1,0 +1,7 @@
+parameters:
+#    kdv_front.example.class: Kdv\FrontBundle\Example
+
+services:
+    karu.file.manager:
+        class: Kdv\FrontBundle\Service\FileManager
+     

@@ -1,0 +1,51 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+<section id="main" role="main">
+
+    <div class="breadcrumb-container">
+        <div class="row">
+            <div class="large-12 column">
+                <nav class="breadcrumbs animated bounceInDown">
+                    <a href="{{path('home')}}">Home</a>
+                    <a class="current" href="#">Développements</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="part">
+        <div class="row title">
+            <div class="large-12 column">
+                <h6>Bienvenue au laboratoire de Karudev.</h6>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 column">
+                <p>
+               Vous y trouverez des démos de différents modules, services en symfony2.
+                </p> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 column">
+                <article>
+                    <h5>Service KaruFileManager</h5>
+                        <p>
+                         Service permettant de gérer les fichiers : <br/>
+                         - Redimensionnement de fichiers  <br/>
+                         <a href="{{path('dev_KaruFileManager')}}">Voir la démo</a>
+                        </p>
+                </article>
+                        
+                
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+</section>
+{% endblock %}

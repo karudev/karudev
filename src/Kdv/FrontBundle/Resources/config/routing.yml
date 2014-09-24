@@ -1,0 +1,29 @@
+home:
+    pattern:  /
+    defaults: { _controller: KdvFrontBundle:Default:index }
+    
+company:
+    pattern:  /societe
+    defaults: { _controller: KdvFrontBundle:Company:index }  
+    
+tech:
+    pattern:  /technologies
+    defaults: { _controller: KdvFrontBundle:Tech:index }
+
+contact:
+    pattern:  /contact/{objet}
+    defaults: { _controller: KdvFrontBundle:Contact:index, objet:null }
+    
+legal:
+    pattern:  /mentions-legales
+    defaults: { _controller: KdvFrontBundle:Legal:index }
+
+#dev:
+#    pattern:  /developpements
+#    defaults: { _controller: KdvFrontBundle:Dev:index }
+#    
+#dev_KaruFileManager:
+#    pattern:  /developpements/karu-file-manager
+#    defaults: { _controller: KdvFrontBundle:Dev:karuFileManager }
+
+

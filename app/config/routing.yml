@@ -1,0 +1,4 @@
+kdv_front:
+    resource: "@KdvFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+

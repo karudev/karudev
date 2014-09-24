@@ -1,0 +1,104 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+<section id="main" role="main">
+
+    <div class="breadcrumb-container">
+        <div class="row">
+            <div class="large-12 column">
+                <nav class="breadcrumbs animated bounceInDown">
+                    <a href="{{path('home')}}">Home</a>
+                    <a class="current" href="{{path('tech')}}">Technologies utilisées</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="part">
+        <div class="row title">
+            <div class="large-12 column">
+                <h6>Technologies principales utilisées</h6>
+            </div>
+        </div>
+
+        <article class="row">
+            <div class="large-6 column text-center">
+                <img src="{{asset('global/images/photos/features1.png')}}" class="margin-bottom-small" alt="">
+            </div>
+            <div class="large-6 column">
+                <h4 class="red no-top-margin">Symfony2</h4>
+                <p>
+
+Symfony est un framework PHP puissant et moderne.<br/>
+
+Symfony est un framework, un ensemble d'outils et une méthodologie de développement.<br/>
+
+Au-delà des outils, Symfony est aussi une philosophie et une communauté.
+
+                </p>
+            </div>
+        </article>
+
+        <div class="row">
+            <div class="large-12 column">
+                <hr class="margin-top margin-bottom">
+            </div>
+        </div>
+
+        <article class="row">
+            <div class="large-6 push-6 column text-center">
+                <img src="{{asset('global/images/photos/features2.jpg')}}" class="margin-bottom-small" alt="">
+            </div>
+
+            <div class="large-6 pull-6 column">
+                <h4 class="red">Zend Framework</h4>
+                <p>
+                 Le Zend Framework est un framework pour PHP 5 créé en mars 2006 par Zend Technologies.<br/>
+                 Le Zend Framework, aussi nommé ZF, a été développé dans le but de simplifier le développement Web tout en recommandant les bonnes pratiques et la conception orientée objets en offrant des outils aux développeurs.<br/>
+                 ZF permet aussi d'utiliser nativement le principe de MVC (Modèle-Vue-Contrôleur) mais ne l'oblige pas.</p>
+            </div>
+        </article>
+
+        <div class="row">
+            <div class="large-12 column">
+                <hr class="margin-top margin-bottom">
+            </div>
+        </div>
+
+        <article class="row">
+            <div class="large-6 column text-center">
+                <img src="{{asset('global/images/photos/features3.png')}}" class="margin-bottom-small" alt="">
+            </div>
+            <div class="large-6 column">
+                <h4 class="red">Mysql</h4>
+                <p>
+                    MySQL est un système de gestion de base de données (SGBD). <br/>
+                    Il fait partie des logiciels de gestion de base de données les plus utilisés au monde1, autant par le grand public (applications web principalement) que par des professionnels, en concurrence avec Oracle, Informix et Microsoft SQL Server.. </p>
+            </div>
+        </article>
+
+        <div class="row">
+            <div class="large-12 column">
+                <hr class="margin-top margin-bottom">
+            </div>
+        </div>
+
+        <article class="row">
+            <div class="large-6 push-6 column text-center">
+                <img src="{{asset('global/images/photos/features4.png')}}" class="margin-bottom-small" alt="">
+            </div>
+            <div class="large-6 pull-6 column">
+               <h4 class="red">Git</h4>
+                <p>
+                    Git est un logiciel de gestion de versions décentralisé.<br/>
+                    Il est conçu pour être efficace tant avec les petits projets, que les plus importants. <br/>
+                    Contrairement à des outils comme svn ou cvs, Git fonctionne de façon décentralisée, c'est-à-dire que le développement ne se fait pas sur un serveur centralisé, mais chaque personne peut développer sur son propre dépôt.<br/>
+                    Git facilite ensuite la fusion (merge) des différents dépôts. </p>
+            </div>
+        </article>
+    </section>
+
+</section>
+{% endblock %}
