@@ -2382,8 +2382,9 @@ header .title-area .name { position: relative; left: 0; }
 section#main { background: #fff; }
 
 #hero { background: #35383f url(../images/photos/hero.jpg) center center no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; width: 100%; overflow: hidden; }
-#hero h1 { color: #f27950; font-weight: 300; }
-#hero h4 { color: #bec1c2; font-weight: 400; }
+#hero h1 { color: #f27950; font-weight: 500; }
+/*#hero h4 { color: #bec1c2; font-weight: 400; }*/
+#hero h4 { color: #FFF; font-weight: 600; }
 #hero .animated { -webkit-transition-delay: 5s; -moz-transition-delay: 5s; -o-transition-delay: 5s; transition-delay: 5s; }
 #hero .button { -webkit-transition: all 300ms ease-out; -moz-transition: all 300ms ease-out; transition: all 300ms ease-out; background: transparent; border: #fff 2px solid; color: #fff !important; font-weight: normal; }
 #hero .button:hover { background-color: rgba(255, 255, 255, 0.2); }
